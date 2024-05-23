@@ -1,18 +1,190 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    scroll-behavior: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+    --bg-color: #101131;
+    --text-color: #fff;
+    --main-color: #ffd700;
+    --h1-font: 6rem;
+}
+
+
+.container-contacto-plus{
+    background-image: url(../media/bg-header.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-contacto-plus::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .65;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 15%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    transition: all .55s ease;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    display:flex;
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 700;
+    margin-left: 40px;
+    transition: all .55s ease;
+} 
 
 img{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+button{
+    width: 300px;
+}
+
+.container-contacto{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container-contacto2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    position: relative;
+    min-height: 200px;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
 }
 
 
+.form{
 
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.contacto-datos{
+    padding: 2px;
+}
+
+.contacto-form{
+    padding: 10px;
+    width: 100%;
+}
+
+p{
+    font-size: 15px;
+    color: var(--text-color);
+    padding: 5px;
+}
+
+h3{
+    color:var(--text-color);
+    padding: 5px;
+}
+
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 1px;
+    margin: 4px;
+    border-radius: 10px;
+    border: #101131 1px solid;
+}
+
+.input-texto{
+    height: 150px;
+
+}
+
+
+button{
+    background-color: #ffd700;
+    width: 100%;
+    height: 30px;
+    padding: 1px;
+    margin: 4px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+menu{
+    color: #fff;
+}
+
+.flex-div{
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+
+}
+
+.input-two{
+    display:block;
+    width: 50%;
+}
+
+.section-testimonios{
+    background-color: aqua;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position:relative
+}
+.container-testimonios{
+    display: flex;
+}
+
+.p-footer{
+    color: #fff;
+}
 
 
 footer{
-    background-color: beige;
-    border-radius: 20%;
+    background-color: #795548;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
 }
+
