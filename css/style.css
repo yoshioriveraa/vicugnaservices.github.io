@@ -7,7 +7,7 @@
     border: none;
     scroll-behavior: none;
     outline: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 :root {
@@ -16,7 +16,6 @@
     --main-color: #ffd700;
     --h1-font: 6rem;
 }
-
 
 .container-contacto-plus{
     background-image: url(../media/bg-header.jpg);
@@ -41,13 +40,25 @@ header{
     top:0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 15%;
+    padding: 1.5rem 8%;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
     transition: all .55s ease;
+
+}
+
+.container-logo{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-logo{
+    color: var(--text-color);
 }
 
 .navbar{
@@ -58,10 +69,28 @@ header{
     display:flex;
     color: var(--text-color);
     font-size: var(--p-font);
-    font-weight: 700;
     margin-left: 40px;
     transition: all .55s ease;
 } 
+
+header a{
+    font-family: "Fugaz One";
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.h-btn{
+    background-color: #795548;
+    padding: 10px 15px;
+    color: var(--text-color);
+    margin-left: 40px;
+    border-radius: 8px;
+}
+
+.h-btn:hover{
+    background-color: #57392e;
+}
+
 
 img{
     width: 60px;
@@ -94,7 +123,7 @@ button{
 .form{
 
     margin: 0 auto;
-    padding: 5px;
+    padding: 0;
 }
 
 .contacto-datos{
@@ -112,9 +141,11 @@ p{
     padding: 5px;
 }
 
-h3{
+h3,h2{
     color:var(--text-color);
     padding: 5px;
+    font-family: "Fugaz One";
+    text-transform: uppercase;
 }
 
 
@@ -122,7 +153,8 @@ input{
     width: 100%;
     height: 40px;
     padding: 1px;
-    margin: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     border-radius: 10px;
     border: #101131 1px solid;
 }
@@ -138,7 +170,7 @@ button{
     width: 100%;
     height: 30px;
     padding: 1px;
-    margin: 4px;
+    margin-top: 4px;
     border-radius: 12px;
     font-weight: bold;
 }
