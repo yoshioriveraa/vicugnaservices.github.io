@@ -22,7 +22,7 @@ div{
 }
 
 .container-contacto-plus{
-    background-image: url(../media/bg-header.png);
+    background-image: url(../../img/contactenos/bg-header.png);
     position: relative;
     background-size: cover;
     background-attachment: fixed;
@@ -188,6 +188,7 @@ menu{
 }
 
 /* TESTIMONIOS */
+
 .flex-div{
     display: flex;
     gap: 4px;
@@ -231,7 +232,7 @@ menu{
 .section-testimonios article{
     display: relative;
     width: 30%;  
-    padding: 6% 3%;
+    padding: 6% 1%;
     border: 1px solid;
     border-radius: 6px;
     margin: 0 auto; 
@@ -281,10 +282,19 @@ footer{
     width: 100%;
     bottom: 0;
     right: 0;
-    height: 50px;
-    padding: 10px;
+    height: 100px;
     align-items: center;
     display: flex;
     justify-content: space-between;
+
+}
+
+.images{
+    display: flex;
+}
+
+.images i{
+    color: #fff;
+    
 
 }
