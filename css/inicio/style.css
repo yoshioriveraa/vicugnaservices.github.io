@@ -37,9 +37,14 @@
     color: #ffffff;
     text-decoration: none;
     padding-top: 10px;
+    transition-duration: 12s;
 }
 .lista li a:focus{
     border-bottom: 1px solid #ffffff ;
+}
+.lista li a:hover{
+    border-bottom: 1px solid #ffffff ;
+    
 }
 .logo-nav{
     width: 55PX;
@@ -195,7 +200,7 @@ footer p{
     display: flex;
     gap: 15px;
     align-items: center;
-    margin-left: 58%;
+    margin-left: 55%;
 }
 .iconos i{
     height: 40px;
