@@ -11,6 +11,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
+    gap: 100px;
 }
 .navbar{
     width: 100%;
@@ -18,8 +19,9 @@
 }
 .lista{
     display: flex;
-    gap: 50px;
+    gap: 70px;
     align-items: center;
+    justify-content: center;
 }
 .lista li{
     list-style-type: none;
@@ -29,6 +31,7 @@
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
+    display: block;
 }
 .lista li a:focus{
     border-bottom: 1px solid #ffffff ;
@@ -43,15 +46,10 @@
     justify-content: center;
     color:#ffffff;
     font-family: fugaz one;
-    height: 100%;
-    margin-top: 100px;
+    width: 100%;
+    height: auto;
     text-align: center;
-
 }
-.container div {
-    margin-top: 10px ;
-}
-
 .container h1{
     font-size: 150px;
 }
@@ -61,6 +59,10 @@
 
 .logo-banner{
     padding-left: 50px;
+}
+.logo-banner img{
+    width: 20rem;
+    height: auto;
 }
 .saludo-inicio{
     display: flex;
@@ -150,7 +152,6 @@
     justify-content: space-evenly;
     padding: 10px;
     gap: 40px;
-    
     
 }
 .container-valores div{
