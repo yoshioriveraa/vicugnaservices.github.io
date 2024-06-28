@@ -3,59 +3,40 @@
     margin: 0;
 }
 .barra{
-    width: 100%;
-    background-image:url('../../img/inicio/banner.png');
-    object-position: center;
+    background-image: url('/img/inicio/banner.png');
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
-    object-fit: cover;
-    color: #ffffff;
-    text-align: center;
-    font-size: larger;
-    font-family: sans-serif;
+    flex-direction: column;
 }
 .navbar{
+    width: 100%;
+    padding-left: 150px;
+}
+.lista{
+    display: flex;
+    gap: 50px;
     align-items: center;
-
-}
-.navbar a{
-    color: #ffffff;
-    display: inline-block;
-    justify-content: space-between;
-}
-.lista{     
-    list-style-type: none;
-    
 }
 .lista li{
-    display: inline-block;
-    padding: 0 40px;
-    list-style: none;
+    list-style-type: none;
 }
 .lista li a{
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-    padding-top: 10px;
-    transition-duration: 12s;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 .lista li a:focus{
     border-bottom: 1px solid #ffffff ;
 }
 .lista li a:hover{
     border-bottom: 1px solid #ffffff ;
-    
 }
-.logo-nav{
-    width: 55PX;
-    height: 50PX;
-    margin-right: 10px;
 
-}
-ul li:first-child{
-    margin-left: 50px;
-    margin-right: 100px;
-}
 .container{
     display: flex;
     justify-items: center;
@@ -64,6 +45,7 @@ ul li:first-child{
     font-family: fugaz one;
     height: 100%;
     margin-top: 100px;
+    text-align: center;
 
 }
 .container div {
