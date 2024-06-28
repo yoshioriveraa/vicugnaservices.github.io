@@ -7,7 +7,7 @@
     border: none;
     scroll-behavior: none;
     outline: none;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div{
@@ -108,38 +108,24 @@ button{
 }
 
 .container-contacto{
-    max-width: 1280px;
-    margin: 0 auto;
+    padding: 0 10%;
 }
+
 
 .container-contacto2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    gap: 10px;
     position: relative;
-    min-height: 200px;
     height: 100vh;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem;
 }
-
 
 .form{
-
-    margin: 0 auto;
-    padding: 0;
+    margin: auto;
+    padding: auto;
 }
 
-.contacto-datos{
-    padding: 2px;
-}
-
-.contacto-form{
-    padding: 10px;
-    width: 100%;
-}
 
 .contacto-datos p{
     font-size: 15px;
@@ -147,14 +133,13 @@ button{
     text-align: left;
 }
 
-h3,h2{
+.container-contacto h3,h2{
     color:var(--text-color);
     padding: 5px;
     font-family: "Fugaz One";
     text-transform: uppercase;
     font-weight: 500;
 }
-
 
 input{
     width: 100%;
@@ -172,7 +157,6 @@ input{
 
 }
 
-
 button{
     background-color: #ffd700;
     width: 100%;
@@ -183,26 +167,26 @@ button{
 
 }
 
-menu{
-    color: #fff;
+.contacto-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
 }
+
+.input-telefono, .input-servicio, .input-email, .input-ruc{
+    text-align: center;
+}
+
+.input-empresa, .input-info, .btn-send{
+    grid-column: span 2;
+}
+
+
+
 
 /* TESTIMONIOS */
 
-.flex-div{
-    display: flex;
-    gap: 4px;
-    justify-content: space-between;
-
-}
-
-.input-two{
-    display:block;
-    width: 50%;
-}
-
 .section-testimonios{
-    width: 100%; 
     align-items: center;
     justify-content: center;
     position: relative;
@@ -211,16 +195,15 @@ menu{
 }
 
 .container-testimonios{
-    padding: 15% 5%;
+    padding: 15% 18%;
     
 }
 
 .testimonios-empresas{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    justify-content: space-between;
     gap: 10px;
-    padding: 1% 8%;
 }
 
 
@@ -230,8 +213,7 @@ menu{
 }
 
 .section-testimonios article{
-    display: relative;
-    width: 30%;  
+    display: relative; 
     padding: 6% 1%;
     border: 1px solid;
     border-radius: 6px;
@@ -260,7 +242,6 @@ menu{
 
 .section-testimonios article p,h4{
     text-align: left;
-    padding: 0 auto;
     margin: 10% 0;
 }
 
@@ -297,11 +278,10 @@ section.container-preguntas h2{
 .container-faq{
     display:flex;
     flex-direction: column;
-    padding: 0 15%;
+    padding: 0 18%;
 }
 
 .faq-contenido{
-    width: 100%;
     background-color: transparent;
     border: 1px solid black;
     margin-bottom: 2rem;
@@ -350,5 +330,48 @@ footer{
 .images i{
     color: #fff;
     
+
+}
+
+
+/* FORMATO CELULAR */
+
+@media (max-width:768px){
+
+    .navbar, .h-btn{
+        display: none;
+    }
+    
+    /* FORMULARIO */
+
+    .container-contacto{
+        padding: 0 5%;
+    }
+
+    .container-contacto2{
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+
+    /* TESTIMONIOS */
+    .testimonios-empresas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-testimonios {
+        padding: 0 5%;
+    }
+    .testimonios-empresas img{
+        width: 60%;
+    }
+
+    /* PREGUNTAS */
+
+    .section-preguntas{
+        padding: 0 5%;
+    }
+    .container-faq{
+        padding: 0;
+    }
 
 }
