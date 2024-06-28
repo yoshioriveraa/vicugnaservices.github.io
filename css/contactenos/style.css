@@ -334,6 +334,13 @@ footer{
 }
 
 
+/* FORMATO TABLETA */
+@media (max-width:1024px) and (min-width:768px){
+
+
+}
+
+
 /* FORMATO CELULAR */
 
 @media (max-width:768px){
@@ -342,7 +349,29 @@ footer{
         display: none;
     }
     
+    section.form{
+        width: 100%;
+    }
+
+    section.form input, button{
+        height: 70px;
+    }
+
+    .contacto-form{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4px;
+    }
+    
+    .input-telefono, .input-servicio, .input-email, .input-ruc, .input-empresa, .input-info, .btn-send{  
+        text-align: center;
+        grid-column: 1;
+    }
+
     /* FORMULARIO */
+    .contacto-datos{
+        display:none
+    }
 
     .container-contacto{
         padding: 0 5%;
