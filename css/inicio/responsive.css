@@ -1,4 +1,4 @@
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     .container{
         display: none;
     }
@@ -33,12 +33,13 @@
     .saludo-inicio{
         display: flex;
         width: 100vw;
-        height: auto;
+        height: 50vh;
         align-items: center;
         justify-content: center;
     }
     .saludo-inicio p {
-        margin-left: 0;
+        font-size: 20px;
+        width: 80vw;
     }
     .banner-2{
         display: flex;
@@ -51,23 +52,53 @@
         margin: 0;
         background-image: url('/img/inicio/banner2-mobile.png');
     }
-    .banner-2 div{
+    .text1 ,.text2, .foto-grupo{
         display: flex;
+        width: 80vw;
+        height: auto;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .text1 h2{
+        font-size: 36px;
+    }
+    .text1 p {
+        font-size: 50px;
     }
     .foto-grupo{
-        width: 70vw;
+        width: 80vw;
         height: 400px;
     }
     .text2 p{
-        width: 400px;
+        width: 80vw;
         text-align: justify;
+        margin: 0;
+    }
+    .text2 h2{
+        font-size: 20px;
+    }
+    .valores-titulo{
+        width: 100vw;
+    }
+    .valores-titulo h3{
+        font-size: 20px;
     }
     .container-valores{
-        grid-template-columns: 1fr;
+        width: 100vw;
+        height: auto;
+        grid-template-columns: 80vw;
+        grid-template-rows: auto;
         align-items: center;
-        justify-content: center;
+        padding: 0;
     }
+
+
+
+}
+@media (min-width: 769px) and (max-width:1024px){
+    
 }
