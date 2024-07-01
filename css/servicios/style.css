@@ -17,13 +17,13 @@ header{
 }
 .banner {
     width: 100%;
-    height: 450px; /* Ajusta la altura según tu diseño */
+    height: 450px; 
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    position: relative; /* Permite que se superponga sobre otros elementos */
-    z-index: 1; /* Asegura que esté encima de otros elementos */
+    position: relative; 
+    z-index: 1; 
 }
 
 .banner-content {
@@ -231,13 +231,48 @@ footer {
     .modem-gallery, .pricing-table {
         flex-direction: column;
     }
-
+    
     .pricing-plan {
         margin: 1em 0;
     }
-}
 
 @media (max-width: 480px) {
+    .barra{
+        display: flex;
+        width: 100vw;
+        height: 90vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .navbar{
+        width: 100%;
+        padding-left: 150px;
+    }
+    .lista{
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    .lista li{
+        list-style-type: none;
+    }
+    .lista li a{
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bold;
+        display: block;
+    }
+    .lista li a:focus{
+        border-bottom: 1px solid #ffffff ;
+    }
+    .lista li a:hover{
+        border-bottom: 1px solid #ffffff ;
+    }
     .banner-content {
         padding: 1em;
     }
@@ -245,20 +280,21 @@ footer {
     .banner-content h1 {
         font-size: 1.5em;
     }
-
+    
     .banner-content p {
         font-size: 1em;
     }
-
+    
     #servicio, #modems, #pricing {
         padding: 1em;
     }
-
+    
     .pricing-plan {
         flex: 1 1 100%;
     }
-
+    
     .modem-item {
         flex: 1 1 100%;
     }
+}
 }
