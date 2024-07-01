@@ -32,8 +32,7 @@ html{
 .lista li a{
     color: white;
     text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: Fugaz one;
     display: block;
 }
 .lista li a:focus{

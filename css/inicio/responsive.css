@@ -100,5 +100,32 @@
 
 }
 @media (min-width: 769px) and (max-width:1024px){
-    
+    .barra{
+        width: 100vw;
+        height: auto;
+        gap: 50px;
+    }
+    .navbar{
+        width: 100vw;
+        align-items: center;
+    }
+    .lista{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .container{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container div{
+        width: 50vw;
+    }
+    .container div h1{
+        fon
+    }
 }
