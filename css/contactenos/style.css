@@ -24,7 +24,11 @@ div{
 main{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap:  15rem;
+}
+
+.container-contacto-plus, .section-testimonios, .section-preguntas, footer{
+    padding: 0 12%;
 }
 
 .container-contacto-plus{
@@ -113,9 +117,6 @@ button{
     width: 300px;
 }
 
-.container-contacto{
-    padding: 0 10%;
-}
 
 
 .container-contacto2{
@@ -128,7 +129,7 @@ button{
 }
 
 .form{
-    margin: auto;
+    margin: auto;       
     padding: auto;
 }
 
@@ -164,9 +165,11 @@ input{
 }
 
 button{
-    background-color: #ffd700;
+    background-color: #57392e;
     width: 100%;
     height: 30px;
+    color: #fff;
+    font-weight: 700;
     padding: 1px;
     margin-top: 4px;
     border-radius: 12px;
@@ -199,7 +202,6 @@ button{
     background-color: #fff;
 
 }
-
 
 .testimonios-empresas{
     display: grid;
@@ -254,9 +256,7 @@ button{
 
 /* PREGUNTAS */
 
-.section-preguntas{
-    padding: 0 15%;
-}
+
 
 .container-preguntas{
     justify-content: center;
@@ -280,7 +280,6 @@ section.container-preguntas h2{
 .container-faq{
     display:flex;
     flex-direction: column;
-    padding: 0 18%;
 }
 
 .faq-contenido{
@@ -318,7 +317,6 @@ footer{
     bottom: 0;
     right: 0;
     height: 100px;
-    margin-top: 10rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -339,6 +337,15 @@ footer{
 /* FORMATO TABLETA */
 @media (max-width:1024px) and (min-width:768px){
 
+    .container-contacto2{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+
+    /* TESTIMONIOS */
+    .testimonios-empresas{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
@@ -347,10 +354,87 @@ footer{
 
 @media (max-width:768px){
 
-    .navbar, .h-btn{
+    header{
+        display:flex;
+        flex-direction: column;
+        position: relative;
+        background-color: black;
+        padding: 0 0;
+
+    }
+
+    .container-logo{
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+        background-color: #282825;
+
+    }
+
+    a.logo{
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    
+
+    .logo{
+        width: 100%;
+    }
+
+    .texto-logo{
+        display: none;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .navbar li a{
+        margin: 0 0 ;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar li{
+        height: 100px;
+        background-color: #282825;
+        border: 1px solid #1A1A16;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+
+    a.h-btn{
         display: none;
     }
     
+
+    .container-contacto-plus{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0;
+        gap: 20px;
+        background-image: none;
+    }
+
+    .container-contacto-plus::before{
+        display: none;
+
+    }
+
     section.form{
         width: 100%;
     }
@@ -364,7 +448,7 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         gap: 4px;
     }
-    
+
     .input-telefono, .input-servicio, .input-email, .input-ruc, .input-empresa, .input-info, .btn-send{  
         text-align: center;
         grid-column: 1;
@@ -389,7 +473,7 @@ footer{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .container-testimonios {
+    .section-testimonios {
         padding: 0 5%;
     }
     .testimonios-empresas img{
