@@ -21,6 +21,12 @@ div{
     --h1-font: 6rem;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 .container-contacto-plus{
     background-image: url(../../img/contactenos/bg-header.png);
     position: relative;
@@ -194,10 +200,6 @@ button{
 
 }
 
-.container-testimonios{
-    padding: 15% 18%;
-    
-}
 
 .testimonios-empresas{
     display: grid;
