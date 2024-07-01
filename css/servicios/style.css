@@ -1,247 +1,264 @@
+/* Estilos Generales */
 body {
     margin: 0;
     font-family: 'Fugaz One', sans-serif;
     color: #333;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #f7f3e9; /* Color blanco hueso */
 }
 
+header{
+    background-image:url(../../img/servicios/iconos/Banner\ \(1\).png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .banner {
     width: 100%;
-    background-image: url('../../img/servicios/Banner.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
-    position: relative;
+    height: 450px; /* Ajusta la altura según tu diseño */
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     color: #ffffff;
+    position: relative; /* Permite que se superponga sobre otros elementos */
+    z-index: 1; /* Asegura que esté encima de otros elementos */
 }
 
 .banner-content {
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     color: #fff;
     padding: 2em;
     border-radius: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 800px;
+    text-align: center center;
 }
 
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    background-color: transparent;
-    color: #fff;
-    padding: 1em 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-}
 
+}
 .navbar .lista {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
     display: flex;
-    margin: 0;
+    justify-content: space-around;
 }
 
 .navbar .lista li {
-    margin: 0 1em;
+    display: inline;
 }
 
 .navbar .lista li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5em 0;
-    transition: border-bottom 0.3s ease-in-out;
-}
-
-.navbar .lista li a:focus,
-.navbar .lista li a:hover {
-    border-bottom: 1px solid #ffffff;
-}
-
-.logo-nav {
-    width: 55px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-}
-
-.carousel {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
-}
-
-.carousel button {
-    padding: 0.5em 1em;
-    background-color: #444;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.carousel button:hover {
-    background-color: #666;
-}
-
-main {
-    padding: 2em;
-    background-color: #f4f4f4;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section {
-    margin-bottom: 2em;
-    width: 100%;
-}
-
-section h2 {
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-    margin-bottom: 1em;
+    padding: 14px 20px;
+    text-decoration: none;
 }
 
-.modem-gallery {
+.lista li{
+    list-style-type: none;
+}
+.lista li a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.lista li a:focus{
+    border-bottom: 1px solid #ffffff ;
+}
+.lista li a:hover{
+    border-bottom: 1px solid #ffffff ;
+}
+/* Sección Servicio */
+#servicio {
+    padding: 2em 1em;
+    background: #fff;
+    border-radius: 10px;
+    margin: 2em 0;
+}
+
+#servicio h2 {
+    font-size: 2em;
+    color: #8B4513; /* Color marrón */
+}
+
+#servicio p, #servicio ul {
+    font-size: 1.2em;
+    color: #8B4513; /* Color marrón */
+}
+
+/* Sección Módems */
+#modems {
+    padding: 2em 1em;
+    background: #fff;
+    border-radius: 10px;
+    margin: 2em 0;
+}
+
+#modems h2 {
+    color: #8B4513; /* Color marrón */
+}
+
+#modems .modem-gallery {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2em;
 }
 
 .modem-item {
+    flex: 1 1 30%;
+    padding: 1em;
     text-align: center;
+}
+
+.modem-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modem-item h3 {
+    font-size: 1.5em;
+    color: #8B4513; /* Color marrón */
+}
+
+/* Sección Precios */
+#pricing {
+    padding: 2em 1em;
+    background: #fff;
+    border-radius: 10px;
+    margin: 2em 0;
+}
+
+#pricing h2 {
+    color: #8B4513; /* Color marrón */
 }
 
 .pricing-table {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2em;
 }
 
 .pricing-plan {
-    background: #fff;
+    flex: 1 1 30%;
+    padding: 1em;
+    background: #f7f3e9; /* Color blanco hueso */
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 2em;
     text-align: center;
-    max-width: 300px;
-    flex: 1;
+    margin: 1em 0.5em; /* Márgenes más delgados */
+    border: 2px solid #8B4513; /* Color marrón */
 }
 
 .pricing-plan h3 {
-    margin: 0;
     font-size: 2em;
-    color: #333;
-}
-
-.pricing-plan h3 span {
-    font-size: 0.5em;
+    margin: 0;
+    color: #8B4513; /* Color marrón */
 }
 
 .pricing-plan h4 {
-    margin: 0.5em 0;
     font-size: 1.5em;
-    color: #666;
+    margin: 0.5em 0;
+    color: #8B4513; /* Color marrón */
 }
 
 .pricing-plan ul {
     list-style: none;
     padding: 0;
-    margin: 1em 0;
-    text-align: left;
 }
 
-.pricing-plan ul li {
-    margin-bottom: 0.5em;
+.pricing-plan li {
+    font-size: 1.2em;
+    padding: 0.5em 0;
 }
 
 .pricing-plan .btn {
-    background-color: #444;
+    background-color: #8B4513; /* Color marrón */
     color: #fff;
     padding: 0.5em 1em;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .pricing-plan .btn:hover {
-    background-color: #666;
+    background-color: #a0522d; /* Marrón más claro */
 }
 
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #8B4513; /* Color marrón */
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 1em 0;
+    width: 100%;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-content p {
-    margin: 10px 0;
-    font-size: 0.9em;
+    text-align: center;
 }
 
 .footer-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    margin: 1em 0;
 }
 
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9em;
+    margin: 0 1em;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
 }
 
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-}
-
 .social-icons img {
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
+    margin: 0 1em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .lista {
+        flex-direction: column;
+    }
+
+    .modem-gallery, .pricing-table {
+        flex-direction: column;
+    }
+
+    .pricing-plan {
+        margin: 1em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content {
+        padding: 1em;
+    }
+
+    .banner-content h1 {
+        font-size: 1.5em;
+    }
+
+    .banner-content p {
+        font-size: 1em;
+    }
+
+    #servicio, #modems, #pricing {
+        padding: 1em;
+    }
+
+    .pricing-plan {
+        flex: 1 1 100%;
+    }
+
+    .modem-item {
+        flex: 1 1 100%;
+    }
 }

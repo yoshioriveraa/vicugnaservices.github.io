@@ -21,6 +21,12 @@ div{
     --h1-font: 6rem;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 .container-contacto-plus{
     background-image: url(../../img/contactenos/bg-header.png);
     position: relative;
@@ -194,10 +200,6 @@ button{
 
 }
 
-.container-testimonios{
-    padding: 15% 18%;
-    
-}
 
 .testimonios-empresas{
     display: grid;
@@ -334,6 +336,13 @@ footer{
 }
 
 
+/* FORMATO TABLETA */
+@media (max-width:1024px) and (min-width:768px){
+
+
+}
+
+
 /* FORMATO CELULAR */
 
 @media (max-width:768px){
@@ -342,7 +351,29 @@ footer{
         display: none;
     }
     
+    section.form{
+        width: 100%;
+    }
+
+    section.form input, button{
+        height: 70px;
+    }
+
+    .contacto-form{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4px;
+    }
+    
+    .input-telefono, .input-servicio, .input-email, .input-ruc, .input-empresa, .input-info, .btn-send{  
+        text-align: center;
+        grid-column: 1;
+    }
+
     /* FORMULARIO */
+    .contacto-datos{
+        display:none
+    }
 
     .container-contacto{
         padding: 0 5%;
