@@ -99,10 +99,10 @@
 
 
 }
-@media (min-width: 769px) and (max-width:1024px){
+@media (min-width: 769px) and (max-width:923px){
     .barra{
         width: 100vw;
-        height: 50vh;
+        height: 400px;
         gap: 10px;
         font-size: 12px;
     }
@@ -114,7 +114,10 @@
         width: 100%;
         display: flex;
         height: 100;
-        gap: 60px;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 15px;
+
     }
     .lista img{
         width: 5vw;
@@ -124,7 +127,7 @@
         width: 100vw;
         height: auto;
         display: flex;
-        gap: 0;
+        gap: 40px;
         align-items: center;
         align-content: center;
         justify-content: center;
@@ -146,7 +149,130 @@
         padding: 0;
     }
     .logo-banner img{
-        width: 30vw;
+        width: 25vw;
         height: auto;
+    }
+    .saludo-inicio{
+        width: 100vw;
+    }
+    .saludo-inicio p{
+        width: 70vw;
+    }
+    .banner-2{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 1000px;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 0;
+        background-image: url('/img/inicio/banner2-mobile.png');
+    }
+    .text1 ,.text2, .foto-grupo{
+        display: flex;
+        width: 80vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .text1 h2{
+        font-size: 36px;
+    }
+    .text1 p {
+        font-size: 50px;
+    }
+    .foto-grupo{
+        width: 80vw;
+        height: 400px;
+    }
+    .text2 p{
+        width: 80vw;
+        text-align: justify;
+        margin: 0;
+    }
+    .text2 h2{
+        font-size: 20px;
+    }
+    .container-valores{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+@media (min-width: 924px) and (max-width: 1024px){
+    .barra{
+        width: 100vw;
+        height: 400px;
+        gap: 10px;
+        font-size: 12px;
+    }
+    .navbar{
+        width: 100vw;
+        
+    }
+    .lista{
+        width: 100%;
+        display: flex;
+        height: 100;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 15px;
+
+    }
+    .lista img{
+        width: 5vw;
+        height: auto;
+    }
+    .container{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container div{
+        width: auto;
+    }
+    .container div h1{
+        font-size: 80px;
+    }
+    .container div h2{
+        font-size: 50px;
+    }
+    .container div h5{
+        font-size: 16px;
+    }
+    .logo-banner{
+        padding: 0;
+    }
+    .logo-banner img{
+        width: 25vw;
+        height: auto;
+    }
+    .saludo-inicio{
+        width: 100vw;
+    }
+    .saludo-inicio p{
+        width: 70vw;
+    }
+    .banner-2{
+        width: 100vw;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .text2 p{
+        width: auto;
+        text-align: justify;
+        font-size: 18px;
+    }
+    .text2 h2{
+        margin: 0;
     }
 }

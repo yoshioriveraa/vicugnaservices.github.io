@@ -9,7 +9,7 @@ html{
     background-image: url('/img/inicio/banner.png');
     display: flex;
     width: 100vw;
-    height: 90vh;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,16 +53,16 @@ html{
     text-align: center;
 }
 .container h1{
-    font-size: 150px;
+    font-size: 120px;
 }
 .container h2{
-    font-size: 100px;
+    font-size: 80px;
 }
 .logo-banner{
     padding-left: 50px;
 }
 .logo-banner img{
-    width: 20rem;
+    width: 30vw;
     height: auto;
 }
 .saludo-inicio{
@@ -125,7 +125,7 @@ html{
 }
 .text2 p{
     font-family: roboto;
-    width: 387px;
+    width: auto;
     height: 137px;
     margin-left: 20px;
     font-size: 20px;
