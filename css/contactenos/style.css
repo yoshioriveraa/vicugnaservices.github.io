@@ -8,13 +8,44 @@
     scroll-behavior: none;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 
 .container-contacto-plus{
-    background-image: url("../../img/contactenos/bg-header.png");
+    background-image: url("../../img/contactenos/bg-header2.png");
+    width: 100vw;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.navbar{
+    width: 100%;
+}
+.lista{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+.lista li{
+    list-style-type: none;
+}
+.lista li a{
+    color: white;
+    text-decoration: none;
+    font-family: Fugaz one;
+    display: block;
+}
+.lista li a:focus{
+    border-bottom: 1px solid #ffffff ;
+}
+.lista li a:hover{
+    border-bottom: 1px solid #ffffff ;
+}
 .navbar a{
     display:flex;
     color: var(--text-color);
@@ -45,6 +76,17 @@ button{
     width: 300px;
 }
 
+.container-contacto-plus, .section-testimonios, .section-preguntas, footer{
+    padding: 0 12%;
+}
+
+.container-contacto-plus{
+    background-image: url(../../img/contactenos/bg-header.png);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
 
 
 .container-contacto2{
@@ -52,8 +94,9 @@ button{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     position: relative;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
+    color: white;
 }
 
 .form{
@@ -61,7 +104,14 @@ button{
     padding: auto;
 }
 
-
+.datos{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.datos div{
+    width: 35vw;
+}
 .contacto-datos p{
     font-size: 15px;
     color: var(--text-color);
