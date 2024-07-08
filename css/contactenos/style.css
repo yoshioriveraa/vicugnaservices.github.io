@@ -8,91 +8,47 @@
     scroll-behavior: none;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
-div{
-    display: block;
-}
-
-:root {
-    --bg-color: #101131;
-    --text-color: #fff;
-    --main-color: #ffd700;
-    --h1-font: 6rem;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    gap:  15rem;
-}
-
-.container-contacto-plus, .section-testimonios, .section-preguntas, footer{
-    padding: 0 12%;
-}
 
 .container-contacto-plus{
-    background-image: url(../../img/contactenos/bg-header.png);
-    position: relative;
+    background-image: url("../../img/contactenos/bg-header2.png");
+    width: 100vw;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-.container-contacto-plus::before{
-    position: absolute;
-    content: '';
-    background-color: black;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: .65;
-}
-
-header{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    padding: 1.5rem 8%;
-    background: transparent;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    z-index: 100;
-    transition: all .55s ease;
-
-
-}
-
-.container-logo{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.texto-logo{
-    color: var(--text-color);
+    justify-content: center;
 }
 
 .navbar{
-    display: flex;
+    width: 100%;
 }
-
-.navbar a{
-    display:flex;
-    color: var(--text-color);
-    font-size: var(--p-font);
-    margin-left: 40px;
-    transition: all .55s ease;
-} 
-
-header a{
-    font-family: "Fugaz One";
-    text-transform: uppercase;
-    font-weight: 500;
+.lista{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 76px;
+}
+.lista li{
+    list-style-type: none;
+}
+.lista li a{
+    color: white;
+    text-decoration: none;
+    font-family: Fugaz one;
+    display: block;
+}
+.lista li a:focus{
+    border-bottom: 1px solid #ffffff ;
+}
+.lista li a:hover{
+    border-bottom: 1px solid #ffffff ;
 }
 
 .h-btn{
@@ -117,15 +73,13 @@ button{
     width: 300px;
 }
 
-
-
 .container-contacto2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    position: relative;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
+    color: white;
 }
 
 .form{
@@ -133,7 +87,14 @@ button{
     padding: auto;
 }
 
-
+.datos{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.datos div{
+    width: 35vw;
+}
 .contacto-datos p{
     font-size: 15px;
     color: var(--text-color);
