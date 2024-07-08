@@ -33,41 +33,51 @@ header{
     text-align: center;
 }
 
-.navbar {
+.navbar{
     width: 100%;
-    background-color: transparent; /* added a dark background to highlight the links */
-    padding: 0em; /* added padding for better readability */
+}
+.lista{
     display: flex;
-
+    gap: 70px;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: auto; /* center the list horizontally */
 }
-
-.navbar .lista {
+.lista li{
     list-style-type: none;
-    margin: 0;
-
 }
-
-.navbar .lista li {
-    display: inline-block; /* changed to inline-block to make the list items inline */
-}
-
-.navbar .lista li a {
-    display: block;
-    color: #f2f2f2; /* changed to a lighter gray color */
-    text-align: center;
-    padding: 14px 20px;
+.lista li a{
+    color: white;
     text-decoration: none;
-    transition: border-bottom 0.2s; /* added transition for hover effect */
+    font-family: Fugaz one;
+    display: block;
+}
+.lista li a:focus{
+    border-bottom: 1px solid #ffffff ;
+}
+.lista li a:hover{
+    border-bottom: 1px solid #ffffff ;
 }
 
-.navbar .lista li a:focus,
-.navbar .lista li a:hover {
-    border-bottom: 1px solid #ffffff;
+.h-btn{
+    background-color: #795548;
+    padding: 10px 15px;
+    color: #fff; /* replace with a valid color value */
+    margin-left: auto; /* center the button horizontally */
+    border-radius: 8px;
 }
 
-/* removed duplicate styles */
+.h-btn:hover{
+    background-color: #57392e;
+}
 
-/* Sección Servicio */
+.logo-img{
+    width: 60px;
+    height: 60px;
+    /* add styles for the container if needed */
+    display: inline-block;
+    margin: 10px; /* add some margin for better spacing */
+}
 #servicio {
     padding: 2em 1em;
     background: #fff;
@@ -234,8 +244,7 @@ footer {
     border-radius: 50%; 
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1024px) and (min-width: 768px) {
     .navbar .lista {
         flex-direction: column;
     }
@@ -249,42 +258,59 @@ footer {
     }
 }
 
-@media (max-width: 320px) {
-    .barra{
-        display: flex;
-        width: 100vw;
-        height: 90vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        flex-direction: column;
-        gap: 100px;
+/* Mobile landscape */
+@media (max-width: 768px) {
+    header {
+        background-image: none;
     }
-    .navbar{
+    .banner {
+        display: none; /* Oculta la imagen de fondo */
+    }
+    
+    .banner-content {
+        background: transparent;
+        color: #fff;
+        padding: 2em;
+        border-radius: 10px;
+        max-width: 800px;
+        text-align: center;
+    }
+    
+    .navbar {
+        background-color: #282825; 
+        border: 1px solid #1A1A16; 
         width: 100%;
-        padding-left: 150px;
+        padding-left: 0; 
+
     }
-    .lista{
+    .lista {
+        flex-direction: column;
+        align-items: center;
+        background-color: #282825;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+        gap: 0;
+    }
+
+    .lista li {
+        padding: 5px 0;
+        border: 1px solid #1A1A16;
+    }
+    .lista li a {
         display: flex;
-        gap: 70px;
         align-items: center;
         justify-content: center;
+        height: 100px; /* Ajusta la altura de los enlaces */
+        color: #fff; /* Añade un color de texto blanco para que se vea sobre el fondo oscuro */
+        text-decoration: none; /* Quita la decoración de los enlaces */
     }
-    .lista li{
-        list-style-type: none;
+    .lista li a:focus {
+        border-bottom: 1px solid #ffffff;
     }
-    .lista li a{
-        color: white;
-        text-decoration: none;
-        font-family: sans-serif;
-        font-weight: bold;
-        display: block;
-    }
-    .lista li a:focus{
-        border-bottom: 1px solid #ffffff ;
-    }
-    .lista li a:hover{
-        border-bottom: 1px solid #ffffff ;
+    .lista li a:hover {
+        border-bottom: 1px solid #ffffff;
     }
     .banner-content {
         padding: 1em;
