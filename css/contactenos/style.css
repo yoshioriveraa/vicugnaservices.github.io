@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    
 }
 
 .navbar{
@@ -51,65 +51,56 @@
 .lista li a:hover{
     border-bottom: 1px solid #ffffff ;
 }
-
-.h-btn{
-    background-color: #795548;
-    padding: 10px 15px;
-    color: var(--text-color);
-    margin-left: 40px;
-    border-radius: 8px;
-}
-
-.h-btn:hover{
-    background-color: #57392e;
-}
-
-
-.logo-img{
-    width: 60px;
-    height: 60px;
-}
-
-button{
-    width: 300px;
-}
-
-.container-contacto2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+.container-general{
+    width: 100vw;
     height: 80vh;
+    display: flex;
     align-items: center;
-    color: white;
+    justify-content: center;
+    gap: 5vw;
 }
 
-.form{
-    margin: auto;       
-    padding: auto;
+section{
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .datos{
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
+    color: white;
+    text-align: start;
+    gap: 30px;
 }
-.datos div{
+.datos p{
     width: 35vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
 }
-.contacto-datos p{
-    font-size: 15px;
-    color: var(--text-color);
-    text-align: left;
-}
-
-.container-contacto h3,h2{
-    color:var(--text-color);
-    padding: 5px;
-    font-family: "Fugaz One";
-    text-transform: uppercase;
-    font-weight: 500;
+.datos h3{
+    font-family: Fugaz one;
+    margin-bottom: 10px;
 }
 
+
+
+/*FORM*/
+
+.contacto-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.input-telefono, .input-servicio, .input-email, .input-ruc{
+    text-align: center;
+}
+
+.input-empresa, .input-info, .btn-send{
+    grid-column: span 2;
+}
 input{
     width: 100%;
     height: 40px;
@@ -137,92 +128,49 @@ button{
     border-radius: 12px;
 
 }
+/* FORM END */
 
-.contacto-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px;
-}
-
-.input-telefono, .input-servicio, .input-email, .input-ruc{
-    text-align: center;
-}
-
-.input-empresa, .input-info, .btn-send{
-    grid-column: span 2;
-}
-
-
-
-
-/* TESTIMONIOS */
-
-.section-testimonios{
-
-}
-
-.testimonios-empresas{
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    justify-content: space-evenly;
-    align-items: center;
+.titulo{
     width: 100vw;
-    margin-bottom: 150px;
-}
-
-.section-testimonios article{
-    border: 1px solid #57392e;
-    border-radius: 6px;
-    margin: 0 auto; 
-}
-.upc ,.porsche,.cibertec{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5vw;
 }
-
-.upc-txt{
-    text-align: center;
-}
-
-.img-testimonios{
-    width: 100%;
-    margin: auto;
-    object-fit: cover;
-
-}
-
-.testimonios-txt h2,p{
-    color: black;
-    justify-content: center;
-    text-align: center;
-}
-
-.testimonios-txt h2{
-    color: #8a513c;
-    font-size: 35px;
-}
-.titulo-testimonios{
-    margin-top: 150px;
+.titulo-testimonios h2{
+    color: #854630;
+    font-size: 25px;
+    font-family: Fugaz one;
     margin-bottom: 20px;
 }
-.descripcion-testimonios{
-    margin-bottom: 50px;
+.container-cards{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,30vw);
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
 }
-
-.section-testimonios article p,h4{
-    text-align: center;
-    width: 25vw;
-    margin: 10% 0;
+.container-cards img{
+    width: 20vw;
 }
-
-.section-testimonios h4{
-    font-size: 25px;
+.item1, .item2, .item3{
+    border: 1px solid #854630;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    padding: 10%;
+    box-shadow: 3px 3px 10px;
+    margin-bottom: 100px;
 }
-
-
-/* PREGUNTAS */
+.container-cards h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
 .section-preguntas{
     display: flex;
@@ -230,32 +178,29 @@ button{
     justify-content: center;
     width: 100vw;
 }
-
-.container-preguntas{
+.container-text{
     display: flex;
     flex-direction: column;
-    width: 80%;
-    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
-
-section.container-preguntas h2,h3,p,i{
-    color: black;
-}
-
-section.container-preguntas h2{
-    text-align: center;
-    color: #8a513c;
-    font-size: 35px;
-}   
-
-.container-preguntas h3{
+.container-text h2{
+    color: #854630;
     font-size: 25px;
+    font-family: Fugaz one;
 }
+
+/* preguntas */
+
 
 
 .container-faq{
     display:flex;
     flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .faq-contenido{
@@ -278,144 +223,4 @@ section.container-preguntas h2{
 .faq i {
     font-size: 1.4rem;
     
-}
-
-/* FOOTER */
-
-footer {
-    background-color: #8B4513;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 100px;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-content p {
-    margin: 10px 0;
-    font-size: 0.9em;
-}
-
-.footer-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-}
-
-.social-icons img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* FORMATO TABLETA */
-@media (max-width:1024px) and (min-width:768px){
-
-    .container-contacto2{
-        grid-template-columns: repeat(2, 1fr)
-    }
-
-
-
-    /* TESTIMONIOS */
-    .testimonios-empresas{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* FORMATO CELULAR */
-
-@media (max-width:768px){
-    .container-contacto-plus{
-        width: 100vw;
-        height: 400px;
-        gap: 10px;
-        font-size: 12px;
-    }
-    .navbar{
-        width: 100vw;
-        
-    }
-    .lista{
-        width: 100%;
-        display: flex;
-        height: 100;
-        align-items: center;
-        justify-content: space-around;
-        gap: 15px;
-
-    }
-    .lista img{
-        width: 5vw;
-        height: auto;
-    }
-
-    /* FORMULARIO */
-    .contacto-datos{
-        display:none
-    }
-
-    .container-contacto{
-        padding: 0 5%;
-    }
-
-    .container-contacto2{
-        grid-template-columns: repeat(1, 1fr)
-    }
-
-
-    /* TESTIMONIOS */
-    .testimonios-empresas{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .section-testimonios {
-        padding: 0 5%;
-    }
-    .testimonios-empresas img{
-        width: 60%;
-    }
-
-    /* PREGUNTAS */
-
-    .section-preguntas{
-        padding: 0 5%;
-    }
-    .container-faq{
-        padding: 0;
-    }
-
 }
