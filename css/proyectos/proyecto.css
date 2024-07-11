@@ -19,6 +19,7 @@ body {
     color: #ffffff;
     text-align: center;
     font-size: larger;
+    font-family: Fugaz one;
 }
 
 .navbar {
@@ -55,7 +56,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .container-presentacion h1 {
@@ -68,10 +68,18 @@ body {
     max-width: 800px;
     text-align: center;
 }
+.seccion, .seccion2{
+    font-family: Fugaz one;
+}
 
-.seccion, .seccion2 {
+.seccion {
     padding: 50px 20px;
     text-align: center;
+}
+.seccion2{
+    padding: 50px 20px;
+    text-align: center;
+
 }
 
 .proyecto-lista1 {
@@ -83,7 +91,6 @@ body {
 
 .projecto-opcion {
     width: 30%;
-    border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -106,21 +113,39 @@ footer {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .navbar {
         flex-direction: column;
     }
 
     .lista {
         flex-direction: column;
+        align-items: center;
+        background-color: #282825;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+        gap: 0;
+        
     }
-
+    .lista li {
+        padding: 5px 0;
+        border: 1px solid #1A1A16;
+        margin: 0;
+    }
+    .lista li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
     .logo-nav {
         margin-bottom: 10px;
     }
 
-    .presentacion {
-        padding: 20px;
+    .presentacion h5 {
+        display: none;
     }
 
     .container-presentacion h1 {
