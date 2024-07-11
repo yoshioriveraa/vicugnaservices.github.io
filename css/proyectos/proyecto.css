@@ -11,10 +11,11 @@ body {
 .barra {
     width: 100%;
     background-image: url("../../img/proyectos/fondo1.jpg");
-    background-position: center;
+    object-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 700px;
+    object-fit: cover;
     color: #ffffff;
     text-align: center;
     font-size: larger;
@@ -22,15 +23,13 @@ body {
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #000;
+    align-items: center;
+    padding: 20px;
 }
 
 .navbar a {
     color: #ffffff;
-    font-family: 'Fugaz One';
     text-decoration: none;
     padding: 10px;
 }
@@ -38,169 +37,113 @@ body {
 .lista {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
 
 .lista li {
-    margin: 0;
-}
-
-.lista li a {
-    color: #ffffff;
-    text-decoration: none;
+    margin: 0 20px;
 }
 
 .logo-nav {
-    width: 50px;
+    width: 55px;
     height: 50px;
 }
 
 .presentacion {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 10% 5%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.seccion, .seccion2 {
-    padding: 20px;
+.container-presentacion h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.container-presentacion h5 {
+    font-size: 1.2em;
+    max-width: 800px;
     text-align: center;
 }
 
-.seccion h2, .seccion2 h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #A0522D;
+.seccion, .seccion2 {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .proyecto-lista1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .projecto-opcion {
-    padding: 10px;
+    width: 30%;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    width: 80%;
-    max-width: 300px;
-    text-align: center;
+    overflow: hidden;
 }
 
 .projecto-opcion img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 footer {
-    width: 100%;
-    background-color: #331100;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    margin-top: 50px;
-}
-
-footer p {
+    background: #4b2e2e;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    text-align: center;
+    padding: 20px;
 }
 
-.iconos {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.iconos i {
+    margin: 0 10px;
+    font-size: 2em;
 }
 
-/* Media query for mobile devices */
+/* Mobile Styles */
 @media (max-width: 768px) {
-    .barra {
-        height: 200px;
-        font-size: medium;
-    }
-
     .navbar {
         flex-direction: column;
-        align-items: center;
     }
 
     .lista {
         flex-direction: column;
-        align-items: center;
     }
 
-    .lista li {
-        padding: 5px 0;
+    .logo-nav {
+        margin-bottom: 10px;
     }
 
     .presentacion {
-        margin: 10% 5%;
-    }
-
-    .seccion, .seccion2 {
         padding: 20px;
     }
 
+    .container-presentacion h1 {
+        font-size: 2em;
+    }
+
+    .container-presentacion h5 {
+        font-size: 1em;
+    }
+
     .proyecto-lista1 {
-        gap: 10px;
+        flex-direction: column;
     }
 
     .projecto-opcion {
-        padding: 10px;
-        width: 100%;
+        width: 80%;
     }
 
-    footer {
-        flex-direction: column;
+    .barra {
         height: auto;
-        padding: 10px 0;
-    }
-
-    .iconos {
-        margin-top: 10px;
-    }
-
-    /* Carousel adjustments for mobile */
-    .carousel-container {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    .carousel-item {
-        width: 100%;
-        text-align: center;
-    }
-
-    .carousel-item img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .carousel-nav {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    .carousel-nav button {
-        background-color: #A0522D;
-        border: none;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-    }
-
-    .carousel-nav button.active {
-        background-color: #000;
+        padding: 20px 0;
     }
 }
-
 
 
 
