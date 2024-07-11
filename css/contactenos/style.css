@@ -407,3 +407,37 @@ footer {
         width: 80vw;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .lista{
+        
+        margin-left: 10px;
+        gap: 50px;
+
+    }
+
+    .lista a{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .container-cards{
+        grid-template-columns: repeat(2,30vw);
+        margin-bottom: 150px;
+    }
+    .container-cards div{
+        height: 60vh;
+        margin-bottom: 0;
+    }
+    .item3{
+        grid-column: 1/3;
+    }
+}
