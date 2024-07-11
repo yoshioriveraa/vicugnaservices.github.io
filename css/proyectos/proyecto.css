@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
 body {
     font-family: 'Fugaz One', sans-serif;
 }
@@ -38,72 +37,9 @@ body {
 .lista {
     list-style-type: none;
     display: flex;
-=======
-html {
-    overflow-x: hidden;
-}
-
-/* Estilos de la barra */
-.barra {
-    background-image: url('/img/inicio/banner.png');
-    display: flex;
-    width: 100vw;
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-direction: column;
-    gap: 100px;
-}
-
-/* Estilos de la barra de navegación */
-.navbar {
-    width: 100%;
-    padding-left: 150px;
-}
-
-.lista {
-    display: flex;
-    gap: 70px;
-    align-items: center;
-    justify-content: center;
-}
-
-.lista li {
-    list-style-type: none;
-}
-
-.lista li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Fugaz One', sans-serif;
-    display: block;
-}
-
-.lista li a:focus, 
-.lista li a:hover {
-    border-bottom: 1px solid #ffffff;
-}
-
-.logo-nav {
-    width: 55px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-ul li:first-child {
-    margin-left: 50px;
-    margin-right: 100px;
-}
-
-/* Estilos de la presentación */
-.presentacion {
-    justify-items: center;
->>>>>>> Stashed changes
     align-items: center;
 }
 
-<<<<<<< Updated upstream
 .lista li {
     margin: 0 20px;
 }
@@ -114,9 +50,6 @@ ul li:first-child {
 }
 
 .presentacion {
-=======
-.container-presentacion {
->>>>>>> Stashed changes
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,7 +58,6 @@ ul li:first-child {
     background: rgba(0, 0, 0, 0.5);
 }
 
-<<<<<<< Updated upstream
 .container-presentacion h1 {
     font-size: 3em;
     margin-bottom: 20px;
@@ -134,11 +66,6 @@ ul li:first-child {
 .container-presentacion h5 {
     font-size: 1.2em;
     max-width: 800px;
-=======
-/* Sección de soluciones digitales */
-.seccion {
-    padding: 40px 20px;
->>>>>>> Stashed changes
     text-align: center;
 }
 
@@ -155,73 +82,19 @@ ul li:first-child {
 }
 
 .projecto-opcion {
-<<<<<<< Updated upstream
     width: 30%;
     border: 1px solid #ccc;
-=======
-    padding: 20px;
->>>>>>> Stashed changes
     border-radius: 10px;
     overflow: hidden;
 }
 
 .projecto-opcion img {
-<<<<<<< Updated upstream
     width: 100%;
     height: auto;
 }
 
 footer {
     background: #4b2e2e;
-=======
-    max-width: 140%;
-    height: auto;
-    display: flex;
-    margin: 0 auto;
-}
-
-/* Sección de implementación y mantenimiento de equipos */
-.seccion2 {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.seccion2 h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #A0522D;
-}
-
-/* Estilos del pie de página */
-footer {
-    width: 100%;
-    background-color: #331100;
-    bottom: 0;
-    height: 70px;
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-}
-
-footer p {
-    color: #ffffff;
-    margin-left: 25px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-.iconos {
-    height: 100%;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    margin-left: 58%;
-}
-
-.iconos i {
-    height: 40px;
->>>>>>> Stashed changes
     color: #ffffff;
     text-align: center;
     padding: 20px;
