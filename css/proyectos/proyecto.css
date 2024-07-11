@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
 body {
     font-family: 'Fugaz One', sans-serif;
 }
@@ -11,10 +12,11 @@ body {
 .barra {
     width: 100%;
     background-image: url("../../img/proyectos/fondo1.jpg");
-    background-position: center;
+    object-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 700px;
+    object-fit: cover;
     color: #ffffff;
     text-align: center;
     font-size: larger;
@@ -22,15 +24,13 @@ body {
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #000;
+    align-items: center;
+    padding: 20px;
 }
 
 .navbar a {
     color: #ffffff;
-    font-family: 'Fugaz One';
     text-decoration: none;
     padding: 10px;
 }
@@ -38,169 +38,302 @@ body {
 .lista {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+=======
+html {
+    overflow-x: hidden;
+}
+
+/* Estilos de la barra */
+.barra {
+    background-image: url('/img/inicio/banner.png');
+    display: flex;
+    width: 100vw;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    width: 100%;
+    padding-left: 150px;
+}
+
+.lista {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
 }
 
 .lista li {
-    margin: 0;
+    list-style-type: none;
 }
 
 .lista li a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
+    font-family: 'Fugaz One', sans-serif;
+    display: block;
+}
+
+.lista li a:focus, 
+.lista li a:hover {
+    border-bottom: 1px solid #ffffff;
 }
 
 .logo-nav {
-    width: 50px;
+    width: 55px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+ul li:first-child {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+/* Estilos de la presentación */
+.presentacion {
+    justify-items: center;
+>>>>>>> Stashed changes
+    align-items: center;
+}
+
+<<<<<<< Updated upstream
+.lista li {
+    margin: 0 20px;
+}
+
+.logo-nav {
+    width: 55px;
     height: 50px;
 }
 
 .presentacion {
+=======
+.container-presentacion {
+>>>>>>> Stashed changes
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 10% 5%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.seccion, .seccion2 {
-    padding: 20px;
+<<<<<<< Updated upstream
+.container-presentacion h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.container-presentacion h5 {
+    font-size: 1.2em;
+    max-width: 800px;
+=======
+/* Sección de soluciones digitales */
+.seccion {
+    padding: 40px 20px;
+>>>>>>> Stashed changes
     text-align: center;
 }
 
-.seccion h2, .seccion2 h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #A0522D;
+.seccion, .seccion2 {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .proyecto-lista1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .projecto-opcion {
-    padding: 10px;
+<<<<<<< Updated upstream
+    width: 30%;
+    border: 1px solid #ccc;
+=======
+    padding: 20px;
+>>>>>>> Stashed changes
     border-radius: 10px;
-    width: 80%;
-    max-width: 300px;
-    text-align: center;
+    overflow: hidden;
 }
 
 .projecto-opcion img {
-    max-width: 100%;
+<<<<<<< Updated upstream
+    width: 100%;
     height: auto;
 }
 
 footer {
+    background: #4b2e2e;
+=======
+    max-width: 140%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Sección de implementación y mantenimiento de equipos */
+.seccion2 {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion2 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #A0522D;
+}
+
+/* Estilos del pie de página */
+footer {
     width: 100%;
     background-color: #331100;
+    bottom: 0;
     height: 70px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    margin-top: 50px;
 }
 
 footer p {
     color: #ffffff;
+    margin-left: 25px;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
 .iconos {
+    height: 100%;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
+    margin-left: 58%;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .barra {
-        height: 200px;
-        font-size: medium;
-    }
+.iconos i {
+    height: 40px;
+>>>>>>> Stashed changes
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
 
+.iconos i {
+    margin: 0 10px;
+    font-size: 2em;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: center;
     }
 
     .lista {
         flex-direction: column;
-        align-items: center;
     }
 
-    .lista li {
-        padding: 5px 0;
+    .logo-nav {
+        margin-bottom: 10px;
     }
 
     .presentacion {
-        margin: 10% 5%;
-    }
-
-    .seccion, .seccion2 {
         padding: 20px;
     }
 
+    .container-presentacion h1 {
+        font-size: 2em;
+    }
+
+    .container-presentacion h5 {
+        font-size: 1em;
+    }
+
     .proyecto-lista1 {
-        gap: 10px;
+        flex-direction: column;
     }
 
     .projecto-opcion {
-        padding: 10px;
-        width: 100%;
+        width: 80%;
     }
 
-    footer {
-        flex-direction: column;
+    .barra {
         height: auto;
-        padding: 10px 0;
-    }
-
-    .iconos {
-        margin-top: 10px;
-    }
-
-    /* Carousel adjustments for mobile */
-    .carousel-container {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    .carousel-item {
-        width: 100%;
-        text-align: center;
-    }
-
-    .carousel-item img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .carousel-nav {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    .carousel-nav button {
-        background-color: #A0522D;
-        border: none;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-    }
-
-    .carousel-nav button.active {
-        background-color: #000;
+        padding: 20px 0;
     }
 }
 
+/* Media Queries para dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+    .navbar {
+        padding-left: 20px;
+    }
+
+    .lista {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul li:first-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container-presentacion {
+        margin: 20% 10%;
+    }
+
+    .proyecto-lista1 {
+        flex-direction: column;
+    }
+
+    .projecto-opcion {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .iconos {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .barra {
+        height: 400px;
+        gap: 50px;
+    }
+
+    .navbar {
+        padding-left: 10px;
+    }
+
+    .lista {
+        gap: 10px;
+    }
+
+    .container-presentacion {
+        margin: 25% 5%;
+    }
+
+    .projecto-opcion {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .iconos {
+        gap: 10px;
+    }
+}
 
 
 
