@@ -18,7 +18,7 @@ body {
     object-fit: cover;
     color: #ffffff;
     text-align: center;
-    font-size: larger;
+    font-size:12px ;
     font-family: Fugaz one;
 }
 
@@ -36,20 +36,17 @@ body {
 }
 
 .lista {
+    width: 100%;
     list-style-type: none;
     display: flex;
     align-items: center;
+    padding: 0px;
+    justify-content: space-evenly;
 }
 
 .lista li {
     margin: 0 20px;
 }
-.lista li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-    color: #ff0; 
-}
-
 .logo-nav {
     width: 55px;
     height: 50px;
@@ -118,7 +115,7 @@ footer {
     margin: 0 10px;
     font-size: 2em;
 }
-@media (max-width: 450px) {
+@media (max-width: 560px) {
     .barra{
         height: auto;
         padding: 0px ,0px ,0px,0px;
