@@ -2,8 +2,8 @@ body {
     margin: 0;
     font-family: 'Fugaz One', sans-serif;
     color: #333;
-    text-align: center; /* removed align-items and justify-content, as they are not applicable to body */
-    background-color: #f7f3e9; /* Color blanco hueso */
+    text-align: center; 
+    background-color: #f7f3e9; 
 }
 
 header{
@@ -33,51 +33,53 @@ header{
     text-align: center;
 }
 
-.navbar{
+.navbar {
     width: 100%;
-}
-.lista{
+  }
+
+  .lista {
     display: flex;
     gap: 70px;
     align-items: center;
-    margin-top: 0px;
-    margin-left: auto; /* center the list horizontally */
-}
-.lista li{
+    margin-top: 0;
+    margin-left: auto; /
+  }
+  
+  .lista li {
     list-style-type: none;
-}
-.lista li a{
-    color: white;
+  }
+  
+  .lista li a {
+    color: #fff;
     text-decoration: none;
-    font-family: Fugaz one;
+    font-family: 'Fugaz One';
     display: block;
-}
-.lista li a:focus{
-    border-bottom: 1px solid #ffffff ;
-}
-.lista li a:hover{
-    border-bottom: 1px solid #ffffff ;
-}
-
-.h-btn{
+  }
+  
+  .lista li a:focus,
+  .lista li a:hover {
+    border-bottom: 1px solid #fff;
+  }
+  
+  /* Button styles */
+  .h-btn {
     background-color: #795548;
     padding: 10px 15px;
-    color: #fff; /* replace with a valid color value */
-    margin-left: auto; /* center the button horizontally */
+    color: #fff;
+    margin-left: auto;
     border-radius: 8px;
-}
-
-.h-btn:hover{
+  }
+  
+  .h-btn:hover {
     background-color: #57392e;
-}
-
-.logo-img{
+  }
+  
+  .logo-img {
     width: 60px;
     height: 60px;
-    /* add styles for the container if needed */
     display: inline-block;
-    margin: 10px; /* add some margin for better spacing */
-}
+    margin: 10px; 
+  }
 #servicio {
     padding: 2em 1em;
     background: #fff;
