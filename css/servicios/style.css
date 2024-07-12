@@ -5,13 +5,20 @@ body {
     text-align: center; 
     background-color: #f7f3e9; 
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fugaz One', sans-serif;
+  }
 
+body, p, span, li, a, ul, ol, dl, dt, dd {
+    font-family: 'Roboto', sans-serif;
+  }
 header{
     background-image:url(../../img/servicios/iconos/Banner\ \(1\).png);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 .banner {
     width: 100%;
@@ -32,6 +39,33 @@ header{
     max-width: 800px;
     text-align: center;
 }
+.carousel button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #prev {
+    background-color: #964B00; 
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  #prev:hover {
+    background-color: #78493C;
+  }
+  
+  #next {
+    background-color: #F5F5DC; 
+    color: #333;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  #next:hover {
+    background-color: #C9C4B5; 
+  }
 
 .navbar {
     width: 100%;
@@ -88,41 +122,39 @@ header{
 
 #servicio h2 {
     font-size: 2em;
-    color: #8B4513; /* Color marrón */
+    color: #8B4513; /
 }
 
 #servicio p, #servicio ul {
     font-size: 1.2em;
-    color: #8B4513; /* Color marrón */
+    color: #8B4513; 
 }
 
-/* Sección Módems */
 #modems {
     padding: 2em 1em;
     background: #fff;
     border-radius: 10px;
     margin: 2em 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added a subtle shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 #modems h2 {
-    color: #8B4513; /* Color marrón */
-    margin-bottom: 1em; /* added some space between the title and the gallery */
+    color: #8B4513; 
+    margin-bottom: 1em; 
 }
 
 #modems.modem-gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 -1em; /* added negative margin to compensate for the item margins */
 }
 
 .modem-item {
     flex: 1 1 30%;
     padding: 1em;
     text-align: center;
-    margin: 1em; /* added margin to create a gap between items */
-    border: 1px solid #8B4513; /* added a brown border */
+    margin: 1em; 
+    border: 1px solid #8B4513; 
     border-radius: 10px;
 }
 
@@ -134,11 +166,10 @@ header{
 
 .modem-item h3 {
     font-size: 1.5em;
-    color: #8B4513; /* Color marrón */
-    margin-top: 0; /* removed margin top to align with the image */
+    color: #8B4513; 
+    margin-top: 0; 
 }
 
-/* Sección Precios */
 #pricing {
     padding: 2em 1em;
     background: #fff;
@@ -147,7 +178,7 @@ header{
 }
 
 #pricing h2 {
-    color: #8B4513; /* Color marrón */
+    color: #8B4513; 
 }
 
 .pricing-table {
@@ -158,23 +189,23 @@ header{
 .pricing-plan {
     flex: 1 1 30%;
     padding: 1em;
-    background: #f7f3e9; /* Color blanco hueso */
+    background: #f7f3e9; 
     border-radius: 10px;
     text-align: center;
-    margin: 1em 0.5em; /* Márgenes más delgados */
-    border: 2px solid #8B4513; /* Color marrón */
+    margin: 1em 0.5em; 
+    border: 2px solid #8B4513; 
 }
 
 .pricing-plan h3 {
     font-size: 2em;
     margin: 0;
-    color: #8B4513; /* Color marrón */
+    color: #8B4513; 
 }
 
 .pricing-plan h4 {
     font-size: 1.5em;
     margin: 0.5em 0;
-    color: #8B4513; /* Color marrón */
+    color: #8B4513; 
 }
 
 .pricing-plan ul {
@@ -188,7 +219,7 @@ header{
 }
 
 .pricing-plan .btn {
-    background-color: #8B4513; /* Color marrón */
+    background-color: #8B4513;
     color: #fff;
     padding: 0.5em 1em;
     border: none;
@@ -197,36 +228,35 @@ header{
 }
 
 .pricing-plan .btn:hover {
-    background-color: #a0522d; /* Marrón más claro */
+    background-color: #a0522d; 
 }
 
-/* Footer */
 footer {
-    background-color: #8B4513; /* Color marrón */
+    background-color: #8B4513; 
     color: #fff;
-    padding: 2em 0; /* increased padding for better readability */
+    padding: 2em 0; 
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center the content horizontally */
+    align-items: center; 
 }
 
 .footer-content {
     text-align: center;
-    margin-bottom: 1em; /* added margin to separate from links */
+    margin-bottom: 1em; 
 }
 
 .footer-links {
     display: flex;
-    justify-content: center; /* center the links horizontally */
-    margin-bottom: 1em; /* added margin to separate from social icons */
+    justify-content: center; 
+    margin-bottom: 1em; 
 }
 
 .footer-links a {
     color: #fff;
     text-decoration: none;
     margin: 0 1em;
-    transition: text-decoration 0.2s; /* added transition for hover effect */
+    transition: text-decoration 0.2s; 
 }
 
 .footer-links a:hover {
@@ -259,13 +289,12 @@ footer {
     }
 }
 
-/* Mobile landscape */
 @media (max-width: 768px) {
     header {
         background-image: none;
     }
     .banner {
-        display: none; /* Oculta la imagen de fondo */
+        display: none;
     }
     
     .banner-content {
@@ -303,9 +332,9 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100px; /* Ajusta la altura de los enlaces */
-        color: #fff; /* Añade un color de texto blanco para que se vea sobre el fondo oscuro */
-        text-decoration: none; /* Quita la decoración de los enlaces */
+        height: 100px; 
+        color: #fff; 
+        text-decoration: none; 
     }
     .lista li a:focus {
         border-bottom: 1px solid #ffffff;
