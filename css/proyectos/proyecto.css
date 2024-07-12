@@ -44,6 +44,11 @@ body {
 .lista li {
     margin: 0 20px;
 }
+.lista li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #ff0; 
+}
 
 .logo-nav {
     width: 55px;
@@ -55,7 +60,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 70%;
 }
 
 .container-presentacion h1 {
@@ -75,6 +80,7 @@ body {
 .seccion {
     padding: 50px 20px;
     text-align: center;
+   
 }
 .seccion2{
     padding: 50px 20px;
@@ -85,6 +91,7 @@ body {
 .proyecto-lista1 {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -111,11 +118,17 @@ footer {
     margin: 0 10px;
     font-size: 2em;
 }
-
-/* Mobile Styles */
-@media (max-width: 780px) {
+@media (max-width: 450px) {
+    .barra{
+        height: auto;
+        padding: 0px ,0px ,0px,0px;
+    }
     .navbar {
         flex-direction: column;
+    }
+    .barra{
+        background-image: none;
+        background-color: #282825;
     }
 
     .lista {
@@ -123,9 +136,9 @@ footer {
         align-items: center;
         background-color: #282825;
         padding: 0;
-        width: 100%;
+        width: 100vw;
         height: auto;
-        display: block;
+        display:block;
         gap: 0;
         
     }
@@ -138,8 +151,8 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100px;
-    }
+        height: 60px;
+    }
     .logo-nav {
         margin-bottom: 10px;
     }
@@ -149,19 +162,26 @@ footer {
     }
 
     .container-presentacion h1 {
-        font-size: 2em;
+        font-size: 2.5em;
+        background-color: black;
     }
 
     .container-presentacion h5 {
         font-size: 1em;
     }
+    .seccion, .seccion2{
+        display: flexbox;
+        object-position: center;
+        align-items: center;
+    }
 
     .proyecto-lista1 {
         flex-direction: column;
+        align-items: center;
     }
 
     .projecto-opcion {
-        width: 80%;
+        width: 65%;
     }
 
     .barra {
@@ -170,5 +190,23 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
 
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.7em;
+    }
+
+    .proyecto-lista1 {
+        justify-content: space-around;
+    }
+
+    .projecto-opcion {
+        width: 45%; /* Ajustar el ancho para dos columnas */
+    }
+}
 

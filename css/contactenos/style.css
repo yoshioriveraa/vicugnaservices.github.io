@@ -40,6 +40,8 @@ html{
     text-decoration: none;
     font-family: Fugaz one;
     display: block;
+    height: 60px;
+    
 }
 .lista li a:focus{
     border-bottom: 1px solid #ffffff ;
