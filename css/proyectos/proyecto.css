@@ -151,7 +151,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        height:100px;
+        height: 60px;
     }
     .logo-nav {
         margin-bottom: 10px;
