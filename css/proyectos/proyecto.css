@@ -18,7 +18,7 @@ body {
     object-fit: cover;
     color: #ffffff;
     text-align: center;
-    font-size:12px ;
+    font-size:16px ;
     font-family: Fugaz one;
 }
 
@@ -87,7 +87,6 @@ body {
 
 .proyecto-lista1 {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -105,17 +104,61 @@ body {
 }
 
 footer {
-    background: #4b2e2e;
-    color: #ffffff;
+    background-color: #8B4513;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
+    margin-top: 100px;
 }
 
-.iconos i {
-    margin: 0 10px;
-    font-size: 2em;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-@media (max-width: 560px) {
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
     .barra{
         height: auto;
         padding: 0px ,0px ,0px,0px;
@@ -187,15 +230,17 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width:1024px) and (min-width: 769px) {
     .navbar {
         flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
 
     .lista {
         flex-direction: row;
-        justify-content: center;
-        font-size: 0.7em;
+        justify-content: space-evenly;
+        font-size: 12px;
     }
 
     .proyecto-lista1 {
