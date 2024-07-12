@@ -276,9 +276,6 @@ footer {
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-    .navbar .lista {
-        flex-direction: column;
-    }
 
     .modem-gallery, .pricing-table {
         flex-direction: column;
