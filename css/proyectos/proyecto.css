@@ -44,6 +44,11 @@ body {
 .lista li {
     margin: 0 20px;
 }
+.lista li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #ff0; 
+}
 
 .logo-nav {
     width: 55px;
@@ -75,6 +80,7 @@ body {
 .seccion {
     padding: 50px 20px;
     text-align: center;
+   
 }
 .seccion2{
     padding: 50px 20px;
@@ -85,6 +91,7 @@ body {
 .proyecto-lista1 {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -111,7 +118,7 @@ footer {
     margin: 0 10px;
     font-size: 2em;
 }
-@media (max-width: 780px) {
+@media (max-width: 450px) {
     .barra{
         height: auto;
         padding: 0px ,0px ,0px,0px;
@@ -163,6 +170,7 @@ footer {
         font-size: 1em;
     }
     .seccion, .seccion2{
+        display: flexbox;
         object-position: center;
         align-items: center;
     }
@@ -182,5 +190,23 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
 
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.7em;
+    }
+
+    .proyecto-lista1 {
+        justify-content: space-around;
+    }
+
+    .projecto-opcion {
+        width: 45%; /* Ajustar el ancho para dos columnas */
+    }
+}
 
