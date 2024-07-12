@@ -40,7 +40,6 @@ html{
     text-decoration: none;
     font-family: Fugaz one;
     display: block;
-    height: 60px;
     
 }
 .lista li a:focus{
@@ -150,6 +149,9 @@ button{
     gap: 25px;
     align-items: center;
     justify-content: center;
+}
+.container-cards div{
+    height: 90vh;
 }
 .container-cards img{
     width: 20vw;
@@ -436,7 +438,7 @@ footer {
         margin-bottom: 150px;
     }
     .container-cards div{
-        height: 60vh;
+        height: auto;
         margin-bottom: 0;
     }
     .item3{
