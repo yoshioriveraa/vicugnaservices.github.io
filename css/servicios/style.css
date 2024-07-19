@@ -87,7 +87,7 @@ header{
     color: #fff;
     text-decoration: none;
     font-family: 'Fugaz One';
-    display: block;
+    transition: color 0.2s;
   }
   
   .lista li a:focus,
@@ -337,6 +337,7 @@ footer {
         height: 50px; 
         color: #fff; 
         text-decoration: none; 
+        transition: color 0.2s; 
     }
     .lista li a:focus {
         border-bottom: 1px solid #ffffff;
